@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    background-color: rgb(248, 241, 241);
+    box-sizing: border-box;
+    font-family: Manrope;
+}
+
+main {
+    margin: 200px 200px 0 200px;
+    display: flex;
+    border-radius: 10px;
+    background: white;
+    max-height: 420px;
+    color: gray;
+}
+
+.leftBox {
+    width: 100%;
+    height: 420px;
+    background-image: url("./images/drawers.jpg");
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.rightBox {
+    padding: 30px;
+}
+
+h1 {
+    color: hsl(215, 6%, 40%);
+    text-align: left;
+}
+
+p {
+    font-weight: bold;
+    line-height: 25px;
+    color: hsl(217, 11%, 72%);
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLeft {
+    display: flex;
+    align-items: center;
+
+}
+
+.rightBox {
+    display: inline;
+    text-align: center;
+}
+
+footer img {
+
+    height: 56px;
+    border-radius: 50%;
+    margin: 15px 15px 0 0;
+}
+
+.nameDate {
+    h4 {
+        margin-bottom: 0;
+        margin-left: 0;
+        font-weight: 900;
+    }
+
+    p {
+        margin-top: 0;
+    }
+}
+
+.footerRight {
+    border: none;
+}
+
+.btnShare {
+    border: none;
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.btnShare img {
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    background-color: aliceblue;
+    margin-right: 50px;
+}
+
+.btnIcon {
+    display: flex;
+    margin-top: 50px;
+}
+
+.icons {
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    padding: 10px 24px;
+    border-radius: 9px;
+    height: 30px;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 1;
+}
+
+.icons.active:after,
+.icons.active:before {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+    bottom: -15px;
+    content: '';
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+}
+
+.icons.active:before {
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 18px solid;
+    border-top-color: inherit;
+    bottom: -18px;
+    margin-left: -18px;
+}
+
+label {
+    margin: 8px 10px 3px 0;
+    color: rgb(197, 192, 192);
+    font-weight: 700;
+}
+
+a img {
+    height: 17px;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*---------------------- MOBILE ----------------------------*/
+@media screen and (max-width: 600px) {
+    body {
+        margin: 90px 25px;
+        background-color: hsl(216, 13%, 84%);
+        padding-right: 50px;
+    }
+    main {
+        display: inline-table;
+        margin: 0;
+        width: 100%;
+    }
+    .leftBox {
+        width: 100%;
+        height: 310px;
+    }
+    h1 {
+        padding: 0 30px;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    p {
+        padding: 0 30px;
+    }
+    footer {
+        padding: 0 30px;
+        width: 100%;
+    }
+}
