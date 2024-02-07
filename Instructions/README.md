@@ -26,10 +26,10 @@ Users should be able to:
 ### Screenshot
 
 Desktop
-![](./imagens/DesktopScreemShot.png)
+![](../imagens/DesktopScreenShot.png)
 
 Mobile
-![](./imagens/MobileScreemShot.png)
+![](../imagens/MobileScreenShot.png)
 
 ## My process
 
